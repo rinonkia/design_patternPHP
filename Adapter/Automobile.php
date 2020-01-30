@@ -1,16 +1,6 @@
 <?php
 
-require_once __DIR__ . '/Interface/GasolineEngineInterface.php';
+require_once __DIR__ . '/Car/Automobile.php';
 
-class Automobile implements GasolineEngineInterface
-{
-    public function gasolineOutput($ratio)
-    {
-        return sprintf('ガソリン：%d ％', $ratio);
-    }
-
-    public function running()
-    {
-        echo sprintf('[出力] %s', $this->gasolineOutput(100));
-    }
-}
+$automobile = new Automobile();
+$automobile->running();

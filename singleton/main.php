@@ -1,6 +1,6 @@
 <?php
 
-require_once  'Singleton.php';
+require_once __DIR__ . '/Singleton.php';
 
 $obj1 = Singleton::getInstance();
 sleep(2);

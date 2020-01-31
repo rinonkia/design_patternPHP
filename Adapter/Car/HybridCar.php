@@ -1,7 +1,7 @@
 <?php
 
 require_once 'AutoMobile.php';
-require_once __DIR__ . '/../Interface/ElectricEngineInterface.php';
+require_once __DIR__ . '/../Interfaces/ElectricEngineInterface.php';
 
 class HybridCar extends AutoMobile implements ElectricEngineInterface
 {

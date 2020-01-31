@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../Interface/GasolineEngineInterface.php';
+require_once __DIR__ . '/../Interfaces/GasolineEngineInterface.php';
 
 class Automobile implements GasolineEngineInterface
 {

@@ -1,9 +1,6 @@
 <?php
 
 require_once __DIR__ . '/Factories/ReaderFactory.php';
-require_once __DIR__ . '/json_files/japan.json';
-require_once __DIR__ . '/json_files/regions.json';
-require_once __DIR__ . '/json_files/prefectures.json';
 
 $factory = new ReaderFactory();
 

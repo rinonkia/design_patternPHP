@@ -27,6 +27,7 @@ class SplitDataReader implements DataReaderInterface
             foreach ((array) $this->prefectures->$region_id as $p) {
                 echo $p->name . " ";
             }
+            echo "<br><br>";
         }
     }
 }

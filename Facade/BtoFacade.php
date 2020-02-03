@@ -35,21 +35,21 @@ class BtoFacade
 
     public function ChooseCpu($id)
     {
-        $item = $this->machine_model->getItem($id);
+        $item = $this->parts_cpu->getItem($id);
         $this->choose->add($item);
         $this->total_fee->add($item->getPrice());
     }
 
     public function ChooseMemory($id)
     {
-        $item = $this->machine_model->getItem($id);
+        $item = $this->parts_memory->getItem($id);
         $this->choose->add($item);
         $this->total_fee->add($item->getPrice());
     }
 
     public function ChooseHdd($id)
     {
-        $item = $this->machine_model->getItem($id);
+        $item = $this->parts_hdd->getItem($id);
         $this->choose->add($item);
         $this->total_fee->add($item->getPrice());
     }

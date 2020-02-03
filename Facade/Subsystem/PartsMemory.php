@@ -6,7 +6,7 @@ class PartsMemory
 {
     private $items;
 
-    public function __counstruct()
+    public function __construct()
     {
         $this->items = [
             1 => new Item(1, '4GB', 10000),

@@ -18,7 +18,7 @@ class LaravelTire implements TireInterface
 
         $parts_list = [];
         foreach ($part_map as $parts) {
-            if ($parts->model === "Laravel") {
+            if ($parts->model === "laravel") {
                 $parts_list[] = new TireItem($parts->id, $parts->name, $parts->model);
             }
         }
@@ -30,7 +30,7 @@ class LaravelTire implements TireInterface
         $list = "";
         foreach ($this->partList() as $parts) {
             $list .= sprintf(
-                "<li>Parts-No.%d %s | TARGET MODEL - %s</li>",
+                "<li>Parts-No.%d %s | TARGET MODEL - %s</li>\n",
                 $parts->getId(), $parts->getName(), $parts->getModel()
             );
         }

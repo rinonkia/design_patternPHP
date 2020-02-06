@@ -18,7 +18,7 @@ class LaravelHandle implements HandleInterface
 
         $parts_list = [];
         foreach ($part_map as $parts) {
-            if ($parts->model === "Laravel") {
+            if ($parts->model === "laravel") {
                 $parts_list[] = new HandleItem($parts->id, $parts->name, $parts->model);
             }
         }
@@ -30,7 +30,7 @@ class LaravelHandle implements HandleInterface
         $list = "";
         foreach ($this->partList() as $parts) {
             $list .= sprintf(
-                "<li>Parts-No.%d %s | TARGET MODEL - %s</li>",
+                "<li>Parts-No.%d %s | TARGET MODEL - %s</li>\n",
                 $parts->getId(), $parts->getName(), $parts->getModel()
             );
         }

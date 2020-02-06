@@ -10,7 +10,6 @@ class LaravelEngine implements EngineInterface
     public function __construct()
     {
         $this->json = __DIR__ . '/../../json/engine.json';
-        var_dump($this->json);
     }
 
     public function partList()
@@ -19,7 +18,7 @@ class LaravelEngine implements EngineInterface
 
         $parts_list = [];
         foreach ($part_map as $parts) {
-            if ($parts->model === "Laravel") {
+            if ($parts->model === "laravel") {
                 $parts_list[] = new EngineItem($parts->id, $parts->name, $parts->model);
             }
         }
@@ -31,7 +30,7 @@ class LaravelEngine implements EngineInterface
         $list = "";
         foreach ($this->partList() as $parts) {
             $list .= sprintf(
-                "<li>Parts-No.%d %s | TARGET MODEL - %s</li>",
+                "<li>Parts-No.%d %s | TARGET MODEL - %s</li>\n",
                 $parts->getId(), $parts->getName(), $parts->getModel()
             );
         }

@@ -22,12 +22,12 @@ class SplitDataReader implements DataReaderInterface
     public function show()
     {
         foreach ((array) $this->regions as $r) {
-            echo $r->name . "<br>";
+            echo $r->name . "\n";
             $region_id = $r->id;
             foreach ((array) $this->prefectures->$region_id as $p) {
                 echo $p->name . " ";
             }
-            echo "<br><br>";
+            echo "\n\n";
         }
     }
 }

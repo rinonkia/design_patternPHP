@@ -19,11 +19,11 @@ class BulkDataReader implements DataReaderInterface
     public function show()
     {
         foreach ((array) $this->data as $d) {
-            echo $d->name . "<br>";
+            echo $d->name . "\n";
             foreach ($d->prefecture as $c) {
                 echo $c->name . " ";
             }
-            echo "<br><br>";
+            echo "\n\n";
         }
     }
 }

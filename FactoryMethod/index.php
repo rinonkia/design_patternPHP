@@ -9,7 +9,7 @@ $json = __DIR__ . '/json_files/japan.json';
 $pattern_a = $factory->create($json); 
 $pattern_a->show();
 
-echo "-----------------";
+echo "-----------------\n";
 
 // パターンB 2つのjsonファイルを処理する
 $json_array[] = __DIR__ . '/json_files/regions.json';

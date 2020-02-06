@@ -19,7 +19,7 @@ class FileDataManage implements FileDataManageInterface
 
     public function read()
     {
-        $this->data = json_decode(file_get_contejts($this->json_path));
+        $this->data = json_decode(file_get_contents($this->json_path));
         $this->data_total = count($this->data);
     }
 

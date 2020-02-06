@@ -1,6 +1,6 @@
 <?php
 
-interface FileDataManagerInterface
+interface FileDataManageInterface
 {
     public function read();
 

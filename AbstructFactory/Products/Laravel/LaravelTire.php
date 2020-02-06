@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../TireInterface.php';
-require_once __DIR__ . '/../Items/TireItem.php';
+require_once __DIR__ . '/../../Items/TireItem.php';
 
 class LaravelTire implements TireInterface
 {
@@ -9,7 +9,7 @@ class LaravelTire implements TireInterface
 
     public function __construct()
     {
-        $this->json = '///////';
+        $this->json = __DIR__ . '/../../json/tire.json';
     }
 
     public function partList()
@@ -41,7 +41,7 @@ class LaravelTire implements TireInterface
     {
         echo "<h2>Tire</h2>\n";
         echo "<ul>\n";
-        echo "$this->assembly()";
+        echo $this->assembly();
         echo "</ul>\n";
     }
 }

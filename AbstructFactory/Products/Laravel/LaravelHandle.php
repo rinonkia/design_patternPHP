@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../HandleInterface.php';
-require_once __DIR__ . '/../Items/HandleItem.php';
+require_once __DIR__ . '/../../Items/HandleItem.php';
 
 class LaravelHandle implements HandleInterface
 {
@@ -9,7 +9,7 @@ class LaravelHandle implements HandleInterface
 
     public function __construct()
     {
-        $this->json = '///////';
+        $this->json = __DIR__ . '/../../json/handle.json';
     }
 
     public function partList()
@@ -39,10 +39,10 @@ class LaravelHandle implements HandleInterface
 
     public function add()
     {
-        echo "<h2>Handle</h2>";
-        echo "<ul>";
-        echo "$this->assembly()";
-        echo "</ul>";
+        echo "<h2>Handle</h2>\n";
+        echo "<ul>\n";
+        echo $this->assembly();
+        echo "</ul>\n";
     }
 }
 

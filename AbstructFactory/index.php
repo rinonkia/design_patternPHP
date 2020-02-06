@@ -1,11 +1,13 @@
 <?php
 
+require_once __DIR__ . '/LaravelFactory.php';
+
 $car_models = [
     1 => "laravel",
     2 => "cakephp"
 ];
 
-$target = $car_models[rand(1,2)];
+$target = $car_models[1];
 
 if ($target == "laravel") {
     $model = new LaravelFactory();

@@ -12,12 +12,22 @@ class TravelPlan implements PlanInterface
 
     public function getPlan()
     {
-        return $this->plan = $text;
+        return $this->plan;
+    }
+
+    public function setPlan($text)
+    {
+        $this->plan = $text;
     }
 
     public function getCost()
     {
         return $this->cost;
+    }
+
+    public function setCost($number)
+    {
+        $this->cost = $number;
     }
 
     public function getDuration()

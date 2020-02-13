@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . './../PlanDecorator.php';
-require_once __DIR__ . './../Interfaces/PlanInterface.php';
+require_once __DIR__ . '/../PlanDecorator.php';
+require_once __DIR__ . '/../../Interfaces/PlanInterface.php';
 
 class AirPlanePack extends PlanDecorator
 {

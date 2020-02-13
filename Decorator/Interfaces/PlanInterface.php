@@ -8,5 +8,5 @@ interface PlanInterface
 
     public function getCost();
 
-    public function setCost();
+    public function setCost($number);
 }

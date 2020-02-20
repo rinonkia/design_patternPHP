@@ -19,7 +19,7 @@ class CharacterFactory
     public function addCharacter($char)
     {
         if (!array_key_exists($char, $this->Characters)) {
-            $this->Characters[$char] = new Character($char);
+            $this->Character[$char] = new Character($char);
         }
     }
 

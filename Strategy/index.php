@@ -1,16 +1,19 @@
 <?php
 
-require_once __DIR__ . '/Exchanges/MoneyExchange.php';
+require_once __DIR__ . '/Exchanges/DollarExchange.php';
+require_once __DIR__ . '/Exchanges/EuroExchange.php';
+require_once __DIR__ . '/Exchanges/PondExchange.php';
 
 $jp_yen = 100;
 
-$money = new MoneyExchange($jp_yen);
-
-echo sprintf("JPY %d\n", $jp_yen);
+$dollar = new DollarExchange($jp_yen);
+$euro   = new EuroExchange($jp_yen);
+$pond   = new PondExchange($jp_yen);
+echo sprintf("JPY %d↓\n", $jp_yen);
 echo "\n";
-echo $money->symbol($money->currencyConversion('usa'), 'usa');
+echo $dollar->symbol($dollar->currencyConversion());
 echo "\n";
-echo $money->symbol($money->currencyConversion('euro'), 'euro');
+echo $euro->symbol($euro->currencyConversion());
 echo "\n";
-echo $money->symbol($money->currencyConversion('england'), 'england');
+echo $pond->symbol($pond->currencyConversion());
 echo "\n";
